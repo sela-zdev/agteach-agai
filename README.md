@@ -141,7 +141,7 @@ The web application was deployed on an AWS EC2 instance using Nginx as the rever
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/plant-disease-detection.git
+    git clone https://git.clp.kr/anbschool/2nd/alphabeez/team-projects/agteach-ml-backend.git
     ```
 2. Install the required Python packages:
     ```bash
