@@ -2,7 +2,7 @@
 This repository contains code and instructions for building a Convolutional Neural Network (CNN) model to detect various plant diseases using the PlantVillage dataset. The project involves dataset preprocessing, model training, validation, and deployment into a full-stack application using React.js for the frontend and Flask for the backend.
 
 
-Experience [here](https://agteach.site/agai)
+🎉 Experience it [here](https://agteach.site/agai)
 
 
 ## Table of Contents
@@ -31,7 +31,6 @@ Experience [here](https://agteach.site/agai)
 ├── app.py
 ```
 
----
 
 ## Overview
 
