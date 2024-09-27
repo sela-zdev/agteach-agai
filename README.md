@@ -20,7 +20,6 @@ This repository contains code and instructions for building a Convolutional Neur
 12. [References](#references)
 
 
-**Project Structure**
 ```bash
 ├── metadata 
    └── disease_list.json
