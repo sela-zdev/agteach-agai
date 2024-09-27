@@ -1,0 +1,230 @@
+[
+    {
+        "disease": "Apple Apple scab",
+        "problem": "Fungal disease causing dark, scabby lesions on leaves and fruit.",
+        "symptom": "Brown to olive-green spots on leaves, with dark lesions on fruit.",
+        "cure": "Use fungicide sprays and plant disease-resistant varieties."
+    },
+    {
+        "disease": "Apple Black rot",
+        "problem": "Fungal disease affecting fruit, leaves, and bark.",
+        "symptom": "Dark, rotting spots on fruit and leaves with concentric rings.",
+        "cure": "Prune infected branches, remove diseased fruit, and apply fungicides."
+    },
+    {
+        "disease": "Apple Cedar apple rust",
+        "problem": "Fungal disease caused by spores from nearby cedar trees.",
+        "symptom": "Orange spots on leaves and fruit with gelatinous galls on cedar trees.",
+        "cure": "Remove nearby cedars and apply fungicides."
+    },
+    {
+        "disease": "Apple healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy leaves and fruit.",
+        "cure": "Maintain regular care and disease prevention."
+    },
+    {
+        "disease": "Blueberry healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy leaves and fruit.",
+        "cure": "Ensure good soil drainage and proper care."
+    },
+    {
+        "disease": "Cherry (including sour) Powdery mildew",
+        "problem": "Fungal disease causing white powdery growth on leaves.",
+        "symptom": "White, powdery coating on leaves, affecting growth.",
+        "cure": "Apply fungicide and remove infected leaves."
+    },
+    {
+        "disease": "Cherry (including sour) healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy leaves and fruit.",
+        "cure": "Regular maintenance and monitoring for pests."
+    },
+    {
+        "disease": "Corn (maize) Cercospora leaf spot Gray leaf spot",
+        "problem": "Fungal disease affecting corn leaves.",
+        "symptom": "Gray or brown lesions on leaves, leading to leaf death.",
+        "cure": "Use resistant hybrids and apply fungicides."
+    },
+    {
+        "disease": "Corn (maize) Common rust",
+        "problem": "Fungal infection causing rust-colored pustules on corn leaves.",
+        "symptom": "Rusty brown or orange spots on leaves.",
+        "cure": "Use resistant varieties and apply fungicide."
+    },
+    {
+        "disease": "Corn (maize) Northern Leaf Blight",
+        "problem": "Fungal disease causing long gray or tan lesions on leaves.",
+        "symptom": "Long, elliptical gray spots on leaves.",
+        "cure": "Use fungicides and plant resistant varieties."
+    },
+    {
+        "disease": "Corn (maize) healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy, green leaves and ears.",
+        "cure": "Maintain good field hygiene and crop rotation."
+    },
+    {
+        "disease": "Grape Black rot",
+        "problem": "Fungal disease affecting grapes causing rot.",
+        "symptom": "Dark brown to black spots on leaves and fruit, leading to mummified fruit.",
+        "cure": "Prune infected areas, remove mummified fruit, and apply fungicides."
+    },
+    {
+        "disease": "Grape Esca (Black Measles)",
+        "problem": "Fungal disease causing fruit rot and wood decay.",
+        "symptom": "Dark streaks on leaves and fruit with wood rot in vines.",
+        "cure": "Remove infected vines and apply fungicide."
+    },
+    {
+        "disease": "Grape Leaf blight (Isariopsis Leaf Spot)",
+        "problem": "Fungal disease causing brown or black spots on leaves.",
+        "symptom": "Brown or black lesions on grapevine leaves.",
+        "cure": "Use fungicides and remove infected leaves."
+    },
+    {
+        "disease": "Grape healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy, vibrant leaves and fruit.",
+        "cure": "Continue proper vine management and pest control."
+    },
+    {
+        "disease": "Orange Haunglongbing (Citrus greening)",
+        "problem": "Bacterial disease spread by insects causing fruit deformity.",
+        "symptom": "Yellowing leaves and misshapen, bitter fruit.",
+        "cure": "Control insect vectors and remove infected trees."
+    },
+    {
+        "disease": "Peach Bacterial spot",
+        "problem": "Bacterial disease affecting peach trees, leading to leaf and fruit spots.",
+        "symptom": "Small, water-soaked spots on leaves and fruit that turn dark.",
+        "cure": "Apply bactericides and prune affected branches."
+    },
+    {
+        "disease": "Peach healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy, green leaves and well-formed fruit.",
+        "cure": "Maintain good cultural practices and pest management."
+    },
+    {
+        "disease": "Pepper, bell Bacterial spot",
+        "problem": "Bacterial disease causing lesions on leaves and fruit.",
+        "symptom": "Water-soaked spots on leaves and fruit, turning brown or black.",
+        "cure": "Use resistant varieties and copper-based bactericides."
+    },
+    {
+        "disease": "Pepper, bell healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy leaves and fruit.",
+        "cure": "Ensure proper soil drainage and pest control."
+    },
+    {
+        "disease": "Potato Early blight",
+        "problem": "Fungal disease causing lesions on potato leaves.",
+        "symptom": "Small, dark brown spots on older leaves, with concentric rings.",
+        "cure": "Apply fungicides and rotate crops."
+    },
+    {
+        "disease": "Potato Late blight",
+        "problem": "Fungal disease causing large, dark lesions on leaves and tubers.",
+        "symptom": "Large, irregular dark spots on leaves and tubers.",
+        "cure": "Use fungicides and destroy infected plants."
+    },
+    {
+        "disease": "Potato healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy, green leaves and well-formed tubers.",
+        "cure": "Ensure good soil health and pest management."
+    },
+    {
+        "disease": "Raspberry healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy, green leaves and fruit.",
+        "cure": "Maintain regular pruning and pest control."
+    },
+    {
+        "disease": "Soybean healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy, green leaves and pods.",
+        "cure": "Use good crop rotation practices and pest control."
+    },
+    {
+        "disease": "Squash Powdery mildew",
+        "problem": "Fungal disease causing white powdery growth on leaves.",
+        "symptom": "White powdery spots on leaves, leading to stunted growth.",
+        "cure": "Apply fungicide and remove infected leaves."
+    },
+    {
+        "disease": "Strawberry Leaf scorch",
+        "problem": "Fungal disease affecting strawberry leaves.",
+        "symptom": "Dark brown spots on leaves, leading to leaf death.",
+        "cure": "Remove infected leaves and apply fungicides."
+    },
+    {
+        "disease": "Strawberry healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy leaves and fruit.",
+        "cure": "Maintain good air circulation and moisture levels."
+    },
+    {
+        "disease": "Tomato Bacterial spot",
+        "problem": "Bacterial disease causing leaf and fruit lesions.",
+        "symptom": "Small, water-soaked spots on leaves and fruit, turning dark.",
+        "cure": "Use resistant varieties and copper-based bactericides."
+    },
+    {
+        "disease": "Tomato Early blight",
+        "problem": "Fungal disease causing leaf spots and fruit rot.",
+        "symptom": "Dark brown spots on older leaves, with concentric rings.",
+        "cure": "Apply fungicides and remove affected leaves."
+    },
+    {
+        "disease": "Tomato Late blight",
+        "problem": "Fungal disease causing dark lesions on leaves and fruit.",
+        "symptom": "Large, dark, irregular lesions on leaves and fruit.",
+        "cure": "Use fungicides and destroy infected plants."
+    },
+    {
+        "disease": "Tomato Leaf Mold",
+        "problem": "Fungal disease affecting tomato leaves.",
+        "symptom": "Yellow spots on upper leaf surface and mold on undersides.",
+        "cure": "Use fungicides and provide proper ventilation."
+    },
+    {
+        "disease": "Tomato Septoria leaf spot",
+        "problem": "Fungal disease causing small leaf spots.",
+        "symptom": "Small, circular spots on leaves, leading to leaf drop.",
+        "cure": "Apply fungicides and rotate crops."
+    },
+    {
+        "disease": "Tomato Spider mites Two-spotted spider mite",
+        "problem": "Pest infestation causing yellowing and stippling of leaves.",
+        "symptom": "Yellow stippling on leaves with webbing.",
+        "cure": "Use miticides and encourage natural predators."
+    },
+    {
+        "disease": "Tomato Target Spot",
+        "problem": "Fungal disease causing leaf and fruit spots.",
+        "symptom": "Circular spots with concentric rings on leaves and fruit.",
+        "cure": "Apply fungicides and ensure good air circulation."
+    },
+    {
+        "disease": "Tomato Tomato Yellow Leaf Curl Virus",
+        "problem": "Viral disease causing yellowing and curling of leaves.",
+        "symptom": "Yellow, curled leaves and stunted growth.",
+        "cure": "Control insect vectors and remove infected plants."
+    },
+    {
+        "disease": "Tomato Tomato mosaic virus",
+        "problem": "Viral disease causing leaf mottling and reduced fruit yield.",
+        "symptom": "Mottled, discolored leaves and poor fruit set.",
+        "cure": "Remove infected plants and control pest vectors."
+    },
+    {
+        "disease": "Tomato healthy",
+        "problem": "No disease present.",
+        "symptom": "Healthy leaves and well-formed fruit.",
+        "cure": "Maintain good soil health and pest control."
+    }
+]
