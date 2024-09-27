@@ -130,7 +130,7 @@ The trained CNN model was integrated into a full-stack web application using:
 
 Model was saved as follows:
 ```python
-model.save('./plant_disease_prediction_model.keras')
+model.save('./plant_disease_cnn_x.keras')
 ```
 
 ## Deployment
