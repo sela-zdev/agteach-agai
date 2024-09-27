@@ -26,8 +26,8 @@ This repository contains code and instructions for building a Convolutional Neur
 ├── model 
    └── plant_disease_cnn_x.keras
 ├── README.md
-└── requirements.txt
 ├── app.py
+└── requirements.txt
 ```
 
 
