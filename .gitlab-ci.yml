@@ -22,16 +22,21 @@ deploy:
         cd /home/ubuntu/app/mlbackend &&
 
         # Check if there's enough disk space
-        AVAILABLE_SPACE=$(df -h / | grep / | awk \'{print $4}\' | sed "s/[A-Za-z]//g")
-        if [ "$AVAILABLE_SPACE" -lt 1 ]; then
-          echo "Error: Not enough disk space. Available space: $AVAILABLE_SPACE GB. Aborting deployment." &&
+        AVAILABLE_SPACE=$(df -h / | grep / | awk '\''{print $4}'\'' | sed "s/[A-Za-z]//g")
+        if (( $(echo "$AVAILABLE_SPACE < 1" | bc -l) )); then
+          echo "Error: Not enough disk space. Available space: $AVAILABLE_SPACE GB. Aborting deployment."
           exit 1
         fi &&
 
         # Set up virtual environment and install dependencies
         python3 -m venv .venv &&
         source .venv/bin/activate &&
-        pip install -r requirements.txt &&
+
+        # Install dependencies and handle installation errors
+        pip install -r requirements.txt || {
+          echo "Error installing dependencies. Check requirements.txt for issues."
+          exit 1
+        } &&
         
         # Restart the Flask app using PM2
         pm2 stop mlbackend || true &&
