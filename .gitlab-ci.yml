@@ -17,32 +17,32 @@ deploy:
     - rsync $RSYNC_OPTIONS ./backend/ "$AWS_SSH_USER@$AWS_SSH_IP:/home/ubuntu/app/mlbackend"
     
     # Connect to the EC2 instance and set up the environment
-    - >
-      ssh "$AWS_SSH_USER@$AWS_SSH_IP" '
-        cd /home/ubuntu/app/mlbackend &&
+ # Connect to the EC2 instance and set up the environment
+    - |
+      ssh "$AWS_SSH_USER@$AWS_SSH_IP" <<'EOF'
+        cd /home/ubuntu/app/mlbackend
 
         # Check if there's enough disk space
-        # AVAILABLE_SPACE=$(df -h / | grep / | awk '\''{print $4}'\'' | sed "s/[A-Za-z]//g")
+        # AVAILABLE_SPACE=$(df -h / | grep / | awk '{print $4}' | sed "s/[A-Za-z]//g")
         # if (( $(echo "$AVAILABLE_SPACE < 1" | bc -l) )); then
         #   echo "Error: Not enough disk space. Available space: $AVAILABLE_SPACE GB. Aborting deployment."
         #   exit 1
-        # fi &&
+        # fi
 
         # Set up virtual environment and install dependencies
-        python3 -m venv .venv &&
-        source .venv/bin/activate &&
+        python3 -m venv .venv
+        source .venv/bin/activate
 
         # Install dependencies and handle installation errors
         pip install -r requirements.txt || {
           echo "Error installing dependencies. Check requirements.txt for issues."
           exit 1
-        } &&
+        }
         
         # Restart the Flask app using PM2
-        pm2 stop mlbackend || true &&
-        pm2 start app.py --name mlbackend --interpreter python3 --watch &&
+        pm2 stop mlbackend || true
+        pm2 start app.py --name mlbackend --interpreter python3 --watch
         
         # Save PM2 process list for automatic startup
         pm2 save
-      '
-
+      EOF
