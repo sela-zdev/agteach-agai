@@ -10,8 +10,8 @@ before_script:
 
 deploy:
   stage: deploy
-  only:
-    - main  # Replace with the branch you want to deploy from
+  # only:
+  #   - main  # Replace with the branch you want to deploy from
   script:
     # Install rsync if not available on the runner
     - 'which rsync || sudo apt-get update && sudo apt-get install -y rsync'
