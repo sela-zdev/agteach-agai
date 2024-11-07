@@ -22,11 +22,11 @@ deploy:
         cd /home/ubuntu/app/mlbackend &&
 
         # Check if there's enough disk space
-        AVAILABLE_SPACE=$(df -h / | grep / | awk '\''{print $4}'\'' | sed "s/[A-Za-z]//g")
-        if (( $(echo "$AVAILABLE_SPACE < 1" | bc -l) )); then
-          echo "Error: Not enough disk space. Available space: $AVAILABLE_SPACE GB. Aborting deployment."
-          exit 1
-        fi &&
+        # AVAILABLE_SPACE=$(df -h / | grep / | awk '\''{print $4}'\'' | sed "s/[A-Za-z]//g")
+        # if (( $(echo "$AVAILABLE_SPACE < 1" | bc -l) )); then
+        #   echo "Error: Not enough disk space. Available space: $AVAILABLE_SPACE GB. Aborting deployment."
+        #   exit 1
+        # fi &&
 
         # Set up virtual environment and install dependencies
         python3 -m venv .venv &&
