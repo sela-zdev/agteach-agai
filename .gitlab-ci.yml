@@ -36,5 +36,5 @@ deploy:
         }
         
         # Restart the Flask app using PM2
-        pm2 start app.py --name MlServer --interpreter python3 --watch
+        pm2 restart MlServer --watch
       EOF
