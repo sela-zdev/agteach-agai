@@ -29,15 +29,15 @@ deploy:
         #   exit 1
         # fi
 
-        # Set up virtual environment and install dependencies
-        python3 -m venv .venv
-        source .venv/bin/activate
+        # # Set up virtual environment and install dependencies
+        # python3 -m venv .venv
+        # source .venv/bin/activate
 
-        # Install dependencies and handle installation errors
-        pip install -r requirements.txt || {
-          echo "Error installing dependencies. Check requirements.txt for issues."
-          exit 1
-        }
+        # # Install dependencies and handle installation errors
+        # pip install -r requirements.txt || {
+        #   echo "Error installing dependencies. Check requirements.txt for issues."
+        #   exit 1
+        # }
         
         # Restart the Flask app using PM2
         pm2 stop mlbackend || true
