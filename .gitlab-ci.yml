@@ -36,9 +36,5 @@ deploy:
         }
         
         # Restart the Flask app using PM2
-        pm2 stop MlServer || true
-        pm2 start app.py --name MlServer --interpreter python3 --watch
-        
-        # Save PM2 process list for automatic startup
-        pm2 save
+        pm2 restart app.py --name MlServer --interpreter python3 --watch
       EOF
