@@ -25,6 +25,12 @@ This repository contains code and instructions for building a Convolutional Neur
    └── disease_list.json
 ├── model 
    └── plant_disease_cnn_x.keras
+├── notebook 
+   └── test
+        └── Apple with a disease(Black Rot).JPG
+        └── Strawberry Leaf with a disease(Scorch).JPG
+        └── Tomato(Healthy).JPG
+   └── disease-detection-model.ipynb
 ├── README.md
 ├── app.py
 └── requirements.txt
