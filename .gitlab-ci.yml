@@ -10,8 +10,8 @@ before_script:
 
 deploy:
   stage: deploy
-  only:
-    - main  
+  # only:
+  #   - main  
   script:
     # Sync the backend directory to the EC2 instance target directory
     - rsync $RSYNC_OPTIONS ./backend/ "$AWS_SSH_USER@$AWS_SSH_IP:/home/ubuntu/app/mlbackend"
