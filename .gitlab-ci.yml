@@ -22,27 +22,19 @@ deploy:
       ssh "$AWS_SSH_USER@$AWS_SSH_IP" <<'EOF'
         cd /home/ubuntu/app/mlbackend
 
-        # Check if there's enough disk space
-        # AVAILABLE_SPACE=$(df -h / | grep / | awk '{print $4}' | sed "s/[A-Za-z]//g")
-        # if (( $(echo "$AVAILABLE_SPACE < 1" | bc -l) )); then
-        #   echo "Error: Not enough disk space. Available space: $AVAILABLE_SPACE GB. Aborting deployment."
-        #   exit 1
-        # fi
+        # Output disk space
+        df -h
 
-        # # Set up virtual environment and install dependencies
-        # python3 -m venv .venv
-        # source .venv/bin/activate
+        # Set up virtual environment and install dependencies
+        python3 -m venv .venv
+        source .venv/bin/activate
 
-        # # Install dependencies and handle installation errors
-        # pip install -r requirements.txt || {
-        #   echo "Error installing dependencies. Check requirements.txt for issues."
-        #   exit 1
-        # }
+        # Install dependencies and handle installation errors
+        pip install --no-cache-dir -r requirements.txt || {
+          echo "Error installing dependencies. Check requirements.txt for issues."
+          exit 1
+        }
         
         # Restart the Flask app using PM2
-        pm2 stop mlbackend || true
-        pm2 start app.py --name mlbackend --interpreter python3 --watch
-        
-        # Save PM2 process list for automatic startup
-        pm2 save
+        pm2 restart MlServer --watch
       EOF
